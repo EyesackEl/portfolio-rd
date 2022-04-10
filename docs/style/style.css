@@ -1,0 +1,45 @@
+:root {
+    --dark: #203e48;
+    --light: #378293;
+    --navbar: #fe814f;
+}
+
+body {
+    background: var(--dark);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    padding: 27px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background: var(--navbar);
+}
+
+nav a {
+    /* text-align: center; */
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+footer {
+    background: #67ddbe;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+}
