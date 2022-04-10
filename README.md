@@ -1,2 +1,2 @@
-# portfolio_rd
+# portfolio-rd
 Rough draft of portfolio - week 2 homework
