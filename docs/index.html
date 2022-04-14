@@ -15,18 +15,19 @@
     <!-- Header -->
     <header>
         <h1>My Portfolio</h1>
+    <!-- Navbar -->
         <div>
         <nav>
-          <a href="#">About Me</a>
-          <a href="#">My Work</a>
-          <a href="#">Contact</a>
+          <a href="#about-me">About Me</a>
+          <a href="#my-work">My Work</a>
+          <a href="#contact">Contact</a>
         </nav>
         </div>
     </header>
 
     <!-- About Me -->
     <main>
-        <h1 class="section-headers">About Me</h1>
+        <h1 id="about-me" class="section-headers">About Me</h1>
             <section id="ramble-box">
                 <p id="ramble">Hello! My name is Isaac LaFlamme and I have been a web developer for just over
                 2 weeks. I know, pretty impressive right? Go ahead and email me your
@@ -37,25 +38,32 @@
 
     <!-- Work Examples -->
         <section>
-            <h1 class="section-headers">My Work</h1>
-             <article id="example-box">
-                <div class="example-image">
+            <h1 id="my-work" class="section-headers">My Work</h1>
+             <div id="example-box">
+                <div id="example-image-main">
                     <img src="./style/images/plastic beach 3d.jpg" alt="example image of my work">
+                    <div class="image-label"><p> Example 1</p></div>
                 </div>
                 <div class="example-image">
                     <img src="./style/images/plastic beach 3d.jpg" alt="example image of my work">
+                    <div class="image-label"><p> Example 2</p></div>
                 </div>
                 <div class="example-image">
                     <img src="./style/images/plastic beach 3d.jpg" alt="example image of my work">
+                    <div class="image-label"><p> Example 3</p></div>
                 </div>
-             </article>
+                <div class="example-image">
+                    <img src="./style/images/plastic beach 3d.jpg" alt="example image of my work">
+                    <div class="image-label"><p> Example 4</p></div>
+                </div>
+             </div>
         </section>
 
         <br>
 
     <!-- Contact Section -->
         <aside>
-            <h1 class="section-headers">Contact</h1>
+            <h1 id="contact" class="section-headers">Contact</h1>
               <ul>  
                 <li><a id="contact-cards" href="mailto:isaac.laflamme@gmail.com" target="_blank">Email</a></li>
                 <li><a id="contact-cards" href="https://www.google.com" target="_blank">Linkedin</a></li>

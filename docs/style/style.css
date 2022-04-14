@@ -7,11 +7,10 @@
 }
 
 body {
-    background: var(--dark);
-    color: var(--light);
-
     display: flex;
     flex-direction: column;
+    background: var(--dark);
+    color: var(--light);
 }
 
 
@@ -42,7 +41,7 @@ nav a:hover {
 }
 
 
-/* making headers for each section its own box */
+/* defining headers boundary and applying underline */
 .section-headers {
     width: 146px;
     border-bottom: 2px solid var(--orange);
@@ -63,24 +62,48 @@ nav a:hover {
 
 #example-box {
     display: flex;
-    flex-wrap: wrap;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
     margin: 3% auto;
+}
 
+#example-image-main:hover, .example-image:hover{
+    box-shadow: 20px 20px 18px rgb(54, 54, 54);
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#example-image-main {
+    display: flex;
+    position: relative;
+    min-height: 100%;
+    max-width: 80%;
+    border: 2px solid var(--aqua);
+    margin: 5px 5px 0px 0px;
 }
 
 .example-image {
     display: flex;
-    max-width: 30%;
+    position: relative;
+    min-height: 100%;
+    max-width: 45%;
     border: 2px solid var(--aqua);
-    flex: 1 0 auto;
+    margin: 5px 5px 0px 0px;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;    
+.image-label{
+    position: absolute;
+    left: 0;
+    top: 70%;
+
+    padding: 4px;
+    border: 3px solid black;
+    background: var(--dark);
+    color: black;
 }
 
 #contact-cards {
@@ -98,7 +121,10 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
-
+    main,
+    nav {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -107,8 +133,21 @@ footer {
       flex-direction: column;
     }
 
-    /* header div {
-        width: 70%;
-        margin: auto;
-    } */
+    #example-box {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        width: 90%;
+        margin: 3% auto;
+    }
+
+    #example-image-main{
+        max-width: 65%;
+        margin: 5px auto auto auto;
+    }
+
+    .example-image{
+        max-width: 55%;
+        margin: 5px auto auto auto;
+    }
 }
