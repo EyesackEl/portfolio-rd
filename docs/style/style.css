@@ -11,8 +11,10 @@ body {
     flex-direction: column;
     background: var(--dark);
     color: var(--light);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+        /* Header */
 
 header {
     text-align: center;
@@ -20,7 +22,9 @@ header {
 
 header h1 {
     padding: 27px;
+    font-size: xxx-large;
 }
+    /* Navbar */
 
 /* placing navbar links on right side of screen when viewed on desktop */
 div nav {
@@ -33,32 +37,38 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     color: var(--dark);
-    padding: 10px 15px;
+    margin: 10px 15px;
 }
 
 nav a:hover {
     color: #fff;
 }
 
+        /* Main */
 
 /* defining headers boundary and applying underline */
 .section-headers {
-    width: 146px;
+    width: fit-content;
     border-bottom: 2px solid var(--orange);
+    font-size: xx-large;
+    font-weight: 700;
 }
+    /* About Me */
 
 #ramble-box {
     border: 2px solid var(--aqua);
     border-radius: 20px; 
     max-width: 70%;
-    margin: auto;
+    margin: 13px auto;
     box-sizing: content-box;    
 }
 
 #ramble {
-    font-size: 1.9vw;
-    margin-left: 3%;
+    font-size: large;
+    margin: 1% 2%;
+    text-align: center;
 }
+    /* My Work */
 
 #example-box {
     display: flex;
@@ -101,53 +111,76 @@ img{
     top: 70%;
 
     padding: 4px;
-    border: 3px solid black;
-    background: var(--dark);
+    background: var(--aqua);
     color: black;
 }
 
-#contact-cards {
-    text-decoration: none;
-    color: var(--aqua);
+    /* Contact */
+
+#contact-card-box {
+    display: flex;
+    flex-direction: row; 
+    margin: 8px auto;
+    width: fit-content;
 }
 
-#contact-cards:hover {
+div li{
+    margin: auto 8px;
+}
+
+.contact-card {
+    text-decoration: none;
+    font-size: larger;
+    color: var(--aqua);
+
+    padding: 3px;
+    border: solid 2px var(--light);
+    border-radius: 7px;
+}
+
+.contact-card:hover {
     color: #fff;
 }
+
+        /* Footer */
 
 footer {
     background: var(--aqua);
     text-align: center;
+    font-family: 'Brush Script MT', fantasy;
 }
 
 @media screen and (max-width: 991px) {
+
+    /* making navbar and content in main section
+    fit better on mobile/tablet screens */
     main,
     nav {
         flex-direction: column;
     }
+
+    nav a {
+        margin: 7px auto;
+    }
 }
 
 @media screen and (max-width: 767px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-
-    #example-box {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-around;
-        width: 90%;
-        margin: 3% auto;
-    }
 
     #example-image-main{
         max-width: 65%;
-        margin: 5px auto auto auto;
+        margin: 3px auto;
     }
 
     .example-image{
         max-width: 55%;
-        margin: 5px auto auto auto;
+        margin: 3px auto;
+    }
+
+    div li{
+        margin: 8px auto;
+    }
+
+    #contact-card-box{
+        flex-direction: column;
     }
 }
