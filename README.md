@@ -13,8 +13,9 @@
 
 
 ## Credits
-    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-    http://khroma.co/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+http://khroma.co/
 
 
 
