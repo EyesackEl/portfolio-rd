@@ -6,15 +6,19 @@
     --aqua: #67ddbe;
 }
 
+.bdr {
+    border: 2px solid var(--aqua);
+}
+
 body {
     display: flex;
     flex-direction: column;
     background: var(--dark);
     color: var(--light);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
-
         /* Header */
+
 
 header {
     text-align: center;
@@ -52,17 +56,18 @@ nav a:hover {
     border-bottom: 2px solid var(--orange);
     font-size: xx-large;
     font-weight: 700;
+    margin-left: 5px;
 }
     /* About Me */
 
 #about-me-box {
     display: flex;
     flex-flow: row;
+    margin-top: 10px;
 }
 
 #avatar {
-    border: 2px solid var(--aqua);
-    border-radius: 50%; 
+    border-radius: 50%;
     margin: auto;
     flex-grow: 0;
     flex-shrink: 0;
@@ -94,11 +99,6 @@ nav a:hover {
 
 #example-image-main:hover, .example-image:hover{
     box-shadow: 20px 20px 18px rgb(54, 54, 54);
-}
-
-img{
-    max-width: 100%;
-    max-height: 100%;
 }
 
 #example-image-main {
@@ -141,6 +141,10 @@ img{
 div li{
     margin: auto 8px;
 }
+
+/* .contact-li {
+    margin: auto 8px;
+} */
 
 .contact-card {
     text-decoration: none;

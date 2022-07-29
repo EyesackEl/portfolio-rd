@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&family=Roboto+Slab&family=Water+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
     <title>Portfolio</title>
 </head>
@@ -14,48 +18,54 @@
 
     <!-- Header -->
     <header>
-        <h1>My Portfolio</h1>
-    <!-- Navbar -->
-        <div>
-        <nav>
-          <a href="#about-me">About Me</a>
-          <a href="#my-work">My Work</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        </div>
+        <h1>The Thunderdome</h1>
     </header>
 
-    <!-- About Me -->
+    
     <main>
+        <!-- Navbar -->
+        <div>
+            <nav>
+                <a href="#about-me">About Me</a>
+                <a href="#my-work">My Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <!-- About Me -->
         <h1 id="about-me" class="section-headers">About Me</h1>
           <div id="about-me-box">
-            <img id="avatar" src="./style/images/avatar.jpg" alt="avatar of a handsome guy">
-              <section id="ramble-box">
-                <p id="ramble">Hello! My name is Isaac LaFlamme and I have been a web developer for just over
-                3 weeks. I know, pretty impressive right?</p>
-              </section>
+            <figure class="image is-128x128">
+                <img  class='is-rounded bdr' src="./style/images/avatar.jpg" alt="avatar of a handsome guy">
+            </figure>
+            <section id="ramble-box">
+                <p id="ramble">Hello! My name is Isaac LaFlamme and I am a junior web developer currently enrolled in the University of Washington's full stack flex bootcamp for web development!</p>
+            </section>
+
           </div>
         <br>
 
-    <!-- Work Examples -->
+        <!-- Languages -->
+        <section>
+            <div class = 'languagesWrap'>
+                
+            </div>
+        </section>
+
+        <!-- Work Examples -->
         <section>
             <h1 id="my-work" class="section-headers">My Work</h1>
              <div id="example-box">
                 <div id="example-image-main">
-                    <a href="#" target="_blank"><img src="./style/images/plastic beach 3d.jpg" alt="example image of my work"></a>
-                    <div class="image-label"><p> Example 1</p></div>
+                    <a href="https://github.com/EyesackEl/fork-the-food" target="_blank"><img src="./style/images/fork-the-food.JPG" alt="Screenshot of my project 'Fork the Food'"></a>
+                    <div class="image-label"><p>Fork The Food!</p></div>
                 </div>
                 <div class="example-image">
-                    <a href="#" target="_blank"><img src="./style/images/plastic beach 3d.jpg" alt="example image of my work"></a>
-                    <div class="image-label"><p> Example 2</p></div>
+                    <a href="https://github.com/EyesackEl/weather-forecast" target="_blank"><img src="./style/images/weather-forecast.PNG" alt="Screenshot of my weather forecast application"></a>
+                    <div class="image-label"><p>Weather Time!</p></div>
                 </div>
                 <div class="example-image">
-                    <a href="#" target="_blank"><img src="./style/images/plastic beach 3d.jpg" alt="example image of my work"></a>
-                    <div class="image-label"><p> Example 3</p></div>
-                </div>
-                <div class="example-image">
-                    <a href="#" target="_blank"><img src="./style/images/plastic beach 3d.jpg" alt="example image of my work"></a>
-                    <div class="image-label"><p> Example 4</p></div>
+                    <a href="https://github.com/EyesackEl/manual-thought-transcriber" target="_blank"><img src="./style/images/thought-transcriber.png" alt="example image of my work"></a>
+                    <div class="image-label"><p>Thought Transcriber!</p></div>
                 </div>
              </div>
         </section>
@@ -67,9 +77,9 @@
             <h1 id="contact" class="section-headers">Contact</h1>
               <ul>
                 <div id="contact-card-box">  
-                  <li><a class="contact-card" href="mailto:isaac.laflamme@gmail.com" target="_blank">Email</a></li>
-                  <li><a class="contact-card" href="https://www.google.com" target="_blank">Linkedin</a></li>
-                  <li><a class="contact-card" href="https://github.com/EyesackEl" target="_blank">Github</a></li>
+                  <li class="contact-li"><a class="contact-card" href="mailto:eyesacode@gmail.com" target="_blank">Email</a></li>
+                  <li class="contact-li"><a class="contact-card" href="https://www.linkedin.com/in/isaac-laflamme-12321a234/" target="_blank">Linkedin</a></li>
+                  <li class="contact-li"><a class="contact-card" href="https://github.com/EyesackEl" target="_blank">Github</a></li>
                 </div>
               </ul>  
         </aside>
